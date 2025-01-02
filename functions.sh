@@ -68,7 +68,7 @@ add_keys_to_keystore() {
 # Reference:
 # https://docs.substrate.io/deploy/prepare-to-deploy/#common-deployment-targets
 
-# boot, validator, rpc
+# validator, rpc, archive
 run_node01_() {
     docker run                                      \
         -p              "$port:$port"               \
@@ -92,11 +92,12 @@ run_node01_() {
         --unsafe-rpc-external                                   \
         --rpc-cors              all                             \
         --rpc-max-connections   5000                            \
+        --state-pruning         archive                         \
         --telemetry-url         "$telemetry_url"                \
         --password              "$password"
 }
 
-# boot, validator, rpc
+# validator, rpc
 run_node02_() {
     docker run                                      \
         -p              "$port:$port"               \
