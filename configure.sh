@@ -1,4 +1,4 @@
-. ./node_temp.sh
+. ./node.sh
 
 CHAIN_IMAGE=ghcr.io/mohsennz/jungochain:0.1.0-devnet
 BASE_PATH=/var/lib/jungochain
