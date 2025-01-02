@@ -1,6 +1,6 @@
 . ./node_temp.sh
 
-CHAIN_IMAGE=jungochain:0.1.0-devnet
+CHAIN_IMAGE=ghcr.io/mohsennz/jungochain:0.1.0-devnet
 BASE_PATH=/var/lib/jungochain
 
 . ./functions.sh                        \
