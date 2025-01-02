@@ -1,9 +1,13 @@
-. ./scripts2/prod_chain/node.sh
+. ./node_temp.sh
 
-. ./scripts2/prod_chain/functions.sh    \
-    "$CHAIN_BIN"                        \
+CHAIN_IMAGE=jungochain:0.1.0-devnet
+BASE_PATH=/var/lib/jungochain
+
+. ./functions.sh                        \
+    "$CHAIN_IMAGE"                      \
     "$CHAIN_TYPE"                       \
     "$NODE_NAME"                        \
+    "$BASE_PATH"                        \
     "$ADDRESS"                          \
     "$PORT"                             \
     "$RPC_PORT"                         \

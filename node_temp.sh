@@ -19,7 +19,7 @@ RPC_PORT=9945
 # generted by `<chain-bin> key generate-node-key`
 NODE_KEY="b41f7b58d1bd9cb8f2db1d2fb595c04fae002f6f91995031afe30d4c2bb09323"
 
-CHAIN_SPEC=devnet
+CHAIN_TYPE=devnet
 
 TELEMETRY_URL="wss://telemetry.polkadot.io/submit/ 0"
 
