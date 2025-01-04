@@ -3,7 +3,7 @@
 CHAIN_IMAGE=ghcr.io/mohsennz/jungochain:0.1.0-devnet
 BASE_PATH=/var/lib/jungochain
 
-. ./functions.sh                        \
+. ./functions_net_host.sh               \
     "$CHAIN_IMAGE"                      \
     "$CHAIN_TYPE"                       \
     "$NODE_NAME"                        \

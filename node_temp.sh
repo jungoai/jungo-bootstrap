@@ -1,5 +1,3 @@
-CHAIN_BIN=./target/release/jungochain-node
-
 # To show in telemetry UI
 # E.g: node01, node02, node03
 NODE_NAME="node01"
