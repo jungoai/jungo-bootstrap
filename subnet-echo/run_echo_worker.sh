@@ -5,7 +5,7 @@ chain_endpoint="ws://127.0.0.1:9944"
 coldkey="miner"
 hotkey="default"
 
-echo-worker \
+jungo-sdk-echo-worker \
     --ip                        "$ip"               \
     --port                      "$port"             \
     --netuid                    "$netuid"           \
