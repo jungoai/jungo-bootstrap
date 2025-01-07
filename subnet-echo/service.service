@@ -1,0 +1,10 @@
+[Unit]
+Description=Jungochain subnet node
+After=network.target
+
+[Service]
+ExecStart=path/to/app
+# Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
